@@ -7,8 +7,8 @@ export default function AlbumsList() {
     
     return (
         <>
-            <button onClick={fetchList}>Update List</button>
-            <ol>
+            <button className='update_gallery-list' onClick={fetchList}>Update List</button>
+            <ol className='gallery_list'>
                 {list.map((albums) =>
                     <AlbumsListItem
                     key={albums.id}

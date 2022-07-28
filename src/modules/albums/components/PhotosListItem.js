@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function PhotosListItem({item}) {
     return (
-      <div>
-          some text
-      </div>
+      <img className='photo' src={item.thumbnailUrl} alt={item.title}/>
   )
 }
