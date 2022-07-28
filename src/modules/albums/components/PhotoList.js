@@ -10,11 +10,12 @@ export default function PhotoList() {
 
   return (
     <>      
-      {photos.map((photo) =>
-                      <PhotosListItem
-                      key={photo.id}
-                      item={photo} />
-                  )}
+      {photos.map((photo) => (
+        <PhotosListItem
+        key={photo.id}
+        item={photo} />
+      ))
+      }
     </>
   )
 }
